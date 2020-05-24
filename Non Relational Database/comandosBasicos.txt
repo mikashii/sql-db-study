@@ -1,0 +1,18 @@
+help
+cls
+show dbs
+use wm
+show dbs
+db.createCollection('estados')
+show dbs
+show collections
+show collections
+db.Estados.drop()
+show collections
+db.estados.drop()
+show collections
+show dbs
+
+ db.estados.insert({nome: 'Acre', sigla: 'AC', regiao: 'Norte'})
+WriteResult({ "nInserted" : 1 })
+> db.estados.save({nome: "Alagoas", sigla: "AL", regiao: "Nordeste", populacao: 3322000})
